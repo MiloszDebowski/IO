@@ -1,3 +1,0 @@
-# IO
-Inżynieria Oprogramowania
-PIWO
