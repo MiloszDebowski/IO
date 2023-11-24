@@ -1,0 +1,16 @@
+Klasa "Uzytkownik" zastosowuje zasady SOLID w następujący sposób:
+
+1. *Single Responsibility Principle (Zasada Jednej Odpowiedzialności):*
+   - Klasa jest odpowiedzialna za przechowywanie informacji o użytkowniku oraz udostępnianie dostępu do tych informacji.
+
+2. *Open/Closed Principle (Zasada Otwarte/Zamknięte):*
+   - Klasa jest zamknięta na modyfikacje, ale otwarta na rozszerzenia. Można dodawać nowe funkcje, a struktura klasy pozostanie niezmieniona.
+
+3. *Liskov Substitution Principle (Zasada Podstawienia Liskov):*
+   - Brak dziedziczenia w tym przypadku, ale klasa można swobodnie używać i zastępować tam, gdzie oczekiwany jest obiekt użytkownika.
+
+4. *Interface Segregation Principle (Zasada Segregacji Interfejsów):*
+   - Klasa nie posiada interfejsów, ale jej metody są wyraźnie związane z jednym obszarem odpowiedzialności.
+
+5. *Dependency Inversion Principle (Zasada Odwrócenia Zależności):*
+   - Klasa nie posiada zależności od konkretnych implementacji, co pozwala na elastyczne korzystanie z niej w różnych kontekstach.

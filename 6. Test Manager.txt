@@ -1,0 +1,31 @@
+Test Manager
+
+Single Responsibility Principle (SRP):
+
+Każda klasa powinna mieć tylko jeden powód do zmiany.
+TestManager powinien być odpowiedzialny tylko za zarządzanie testami, bez dodatkowych zadań.
+Open/Closed Principle (OCP):
+
+Klasa powinna być otwarta na rozszerzenia, ale zamknięta na modyfikacje.
+Rozważ użycie interfejsów lub dziedziczenia, aby umożliwić rozszerzanie funkcjonalności klasy.
+Liskov Substitution Principle (LSP):
+
+Obiekty klas potomnych powinny być w stanie zastąpić obiekty klas bazowych bez wpływu na poprawność programu.
+Upewnij się, że każda podklasa Test zachowuje oczekiwane właściwości.
+Interface Segregation Principle (ISP):
+
+Klienty nie powinny być zmuszane do implementacji interfejsów, których nie używają.
+Rozważ podzielenie interfejsu na mniejsze, bardziej specyficzne interfejsy.
+Dependency Inversion Principle (DIP):
+
+Zależności wewnątrz systemu powinny zależeć od abstrakcji, a nie od konkretnych implementacji.
+Unikaj tworzenia bezpośrednich zależności między TestManager a konkretnymi testami; używaj abstrakcji.
+W odniesieniu do metod klasy TestManager:
+
+displayTests() : void: Odpowiada za wyświetlenie dostępnych testów. Zachowuje zgodność z SRP, ponieważ jest to jedno jasne zadanie.
+
+getTestChoice() : int: Pobiera wybór testu od użytkownika. To może być punkt, który wymaga uwagi, aby unikać zbędnych zadań w tej metodzie.
+
+runTest(testChoice : int) : void: Uruchamia wybrany test. Upewnij się, że ta metoda nie ma zbyt wielu zadań i jest zgodna z SRP.
+
+Przestrzeganie tych zasad SOLID pomoże w utrzymaniu elastycznego i czytelnego kodu, łatwego do rozszerzenia i modyfikacji.

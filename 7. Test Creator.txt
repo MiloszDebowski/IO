@@ -1,0 +1,29 @@
+Test Creator
+Single Responsibility Principle (SRP):
+
+Upewnij się, że każda metoda klasy ma jedno jasne zadanie związane z procesem tworzenia testu.
+startTestCreationProcess(), addNewTest(), addQuestionsToTest(), editAndConfigureQuestions(), oraz reviewTest() powinny mieć odpowiednie i jednoznaczne zadania.
+Open/Closed Principle (OCP):
+
+Umożliwiaj rozszerzanie funkcjonalności bez konieczności modyfikowania istniejącego kodu.
+Rozważ użycie interfejsów lub klas abstrakcyjnych, aby umożliwić łatwe rozszerzanie procesu tworzenia testu.
+Liskov Substitution Principle (LSP):
+
+Upewnij się, że obiekty klas dziedziczących od Test mogą być używane zamiennie w procesie tworzenia testu.
+Interface Segregation Principle (ISP):
+
+Jeśli to możliwe, rozważ podzielenie klasy TestCreator na mniejsze interfejsy, związane z poszczególnymi etapami procesu tworzenia testu.
+Dependency Inversion Principle (DIP):
+
+Unikaj bezpośrednich zależności od konkretnych klas testów. Zamiast tego, zależności powinny opierać się na abstrakcjach, na przykład interfejsach.
+W odniesieniu do metod klasy TestCreator:
+
+startTestCreationProcess() : void: Inicjuje proces tworzenia testu. Może być odpowiedzialna za wywołanie kolejnych kroków.
+
+addNewTest(myTest: Test) : void: Dodaje nowy test do procesu. Upewnij się, że ta metoda ma jedno jasne zadanie zgodne z SRP.
+
+addQuestionsToTest(myTest: Test) : void: Dodaje pytania do testu. To zadanie powinno być jednoznaczne i nie powinno obejmować dodatkowych odpowiedzialności.
+
+editAndConfigureQuestions(myTest: Test) : void: Pozwala na edycję i konfigurację pytań w teście. Upewnij się, że ta metoda ma jedno konkretne zadanie.
+
+reviewTest(myTest: Test) : void: Pozwala na przejrzenie testu przed zakończeniem procesu tworzenia. Ponownie, ta metoda powinna być zgodna z SRP.

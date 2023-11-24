@@ -1,0 +1,16 @@
+Klasa "Autoryzacja" zastosowuje zasady SOLID w następujący sposób:
+
+1. *Single Responsibility Principle (Zasada Jednej Odpowiedzialności):*
+   - Klasa jest odpowiedzialna wyłącznie za autoryzację, a jej jedynym obszarem odpowiedzialności jest zarządzanie uprawnieniami.
+
+2. *Open/Closed Principle (Zasada Otwarte/Zamknięte):*
+   - Klasa jest zamknięta na modyfikacje, ale otwarta na rozszerzenia. Jeśli w przyszłości pojawią się nowe wymagania dotyczące autoryzacji, można będzie rozszerzyć funkcjonalność poprzez dodanie nowych metod czy właściwości bez modyfikacji istniejącego kodu.
+
+3. *Liskov Substitution Principle (Zasada Podstawienia Liskov):*
+   - Klasa nie posiada dziedziczenia, ale zgodnie z zasadą, obiekt klasy "Autoryzacja" można zastąpić obiektem bazowej klasy, zachowując oczekiwane zachowanie.
+
+4. *Interface Segregation Principle (Zasada Segregacji Interfejsów):*
+   - W tym przypadku nie ma interfejsów, jednak klasa oferuje jedną wyraźną funkcjonalność związaną z autoryzacją, co wspiera zasadę segregacji interfejsów.
+
+5. *Dependency Inversion Principle (Zasada Odwrócenia Zależności):*
+   - Klasa nie posiada zależności od konkretnych implementacji, co pozwala na elastyczne korzystanie z niej w różnych kontekstach.
