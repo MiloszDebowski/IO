@@ -1,0 +1,11 @@
+TestManager
+
+1. *Controller (Controller):*
+   - displayTests() : void: Kontroler, ponieważ odpowiada za interakcję z użytkownikiem.
+   - getTestChoice() : int: Kontroler, ponieważ obsługuje wejście od użytkownika.
+   - runTest(testChoice : int) : void: Kontroler, ponieważ steruje wykonaniem testu.
+
+2. *Information Expert (Expert):*
+   - displayTests() : void: Ekspert, ponieważ posiada informacje o dostępnych testach.
+   - getTestChoice() : int: Ekspert, ponieważ wie, jak uzyskać wybór od użytkownika.
+   - runTest(testChoice : int) : void: Ekspert, ponieważ wie, jak uruchomić test.

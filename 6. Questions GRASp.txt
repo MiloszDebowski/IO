@@ -1,0 +1,12 @@
+Questions:
+
+1. Information Expert (Ekspert Informacyjny):
+Klasa Questions jest ekspertem informacyjnym, ponieważ przechowuje informacje dotyczące pytań, takie jak treść pytania i liczba punktów.
+2. Low Coupling (Niska sprzężenie):
+Klasa Questions powinna mieć niskie sprzężenie, co oznacza, że nie powinna silnie zależeć od innych klas. Jeśli metody klasy są mało zależne od innych klas, jest to zgodne z zasadą niskiego sprzężenia.
+3. Controller (Kontroler):
+Jeśli klasa Questions jest odpowiedzialna za zarządzanie operacjami związanymi z pytaniem, to pełni rolę kontrolera.
+4. High Cohesion (Wysoka spójność):
+Klasa Questions powinna mieć wysoką spójność, co oznacza, że metody wewnątrz klasy powinny być silnie powiązane ze sobą i działać na tych samych danych.
+5. Creator (Twórca):
+Jeśli klasa Questions jest odpowiedzialna za tworzenie obiektów Questions, to spełnia zasadę twórcy.

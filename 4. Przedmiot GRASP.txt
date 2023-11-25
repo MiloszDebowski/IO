@@ -1,0 +1,9 @@
+
+Przedmiot:
+
+Controller (Kontroler):
+1. Klasa Przedmiot może pełnić rolę kontrolera, zarządzając logiką interakcji między różnymi obiektami. Na przykład, jeśli Przedmiot jest odpowiedzialny za zbieranie informacji od użytkownika i przekazywanie ich do innych obiektów, spełnia zasadę kontrolera.
+2. Information Expert (Ekspert Informacyjny):
+Klasa Przedmiot może być ekspertem informacyjnym, ponieważ posiada informacje dotyczące przedmiotu i zarządza nimi.
+3. High Cohesion (Wysoka spójność):
+Klasa Przedmiot powinna mieć wysoką spójność, co oznacza, że metody wewnątrz klasy powinny być silnie powiązane ze sobą i działać na tych samych danych. Na przykład, metody związane z przedmiotem powinny być umieszczone w klasie Przedmiot.

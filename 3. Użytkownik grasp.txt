@@ -1,0 +1,20 @@
+Użytkownik
+
+1. *Controller (Kontroler):*
+   - Odpowiedzialność: Zarządzanie przepływem danych między obiektami. Nie jest zastosowane w tym przypadku, ponieważ nie mamy kontrolera.
+
+2. *Information Expert (Ekspert w Informacji):*
+   - Odpowiedzialność: Przydzielanie odpowiedzialności do klasy, która posiada najwięcej informacji potrzebnych do wykonania zadania.
+   - Implementacja: Klasa "Uzytkownik" zawiera informacje o pytaniach, treści oraz punktach, co czyni ją ekspertem w tych danych.
+
+3. *Creator (Twórca):*
+   - Odpowiedzialność: Przydzielanie odpowiedzialności dla utworzenia instancji innej klasy.
+   - Implementacja: Konstruktor klasy "Uzytkownik" tworzy nowe instancje obiektu tej klasy.
+
+4. *High Cohesion (Wysoka Kohezja):*
+   - Odpowiedzialność: Grupowanie funkcji, które są ze sobą powiązane.
+   - Implementacja: Metody getQuestion(), getContent(), i getPoints() dotyczą bezpośrednio informacji użytkownika, co zapewnia wysoką kohezję.
+
+5. *Low Coupling (Niska Sprzężenie):*
+   - Odpowiedzialność: Minimalizacja zależności między klasami.
+   - Implementacja: Klasa "Uzytkownik" nie posiada zbyt wielu zależności od innych klas, co pomaga utrzymać niskie sprzężenie.

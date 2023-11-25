@@ -1,0 +1,8 @@
+Test:
+
+1. Information Expert (Ekspert Informacyjny):
+Klasa Test jest ekspertem informacyjnym, ponieważ przechowuje informacje dotyczące konkretnego test
+2. Low Coupling (Niska sprzężenie):
+Klasa Test powinna mieć niskie sprzężenie, co oznacza, że nie powinna silnie zależeć od innych klas. Jeśli metody klasy są mało zależne od innych klas, jest to zgodne z zasadą niskiego sprzężenia.
+3. Creator (Twórca):
+Jeśli klasa Przedmiot jest odpowiedzialna za tworzenie obiektów Test, to spełnia zasadę twórcy.

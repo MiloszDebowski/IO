@@ -1,0 +1,17 @@
+TestCreator
+
+1. *Controller (Controller):*
+   - startTestCreationProcess() : void: Kontroler, ponieważ rozpoczyna proces tworzenia testu.
+   - addNewTest(myTest: Test) : void: Kontroler, ponieważ obsługuje dodawanie nowego testu.
+   - addQuestionsToTest(myTest: Test) : void: Kontroler, ponieważ zarządza dodawaniem pytań do testu.
+   - editAndConfigureQuestions(myTest: Test) : void: Kontroler, ponieważ odpowiada za edycję i konfigurację pytań.
+   - reviewTest(myTest: Test) : void: Kontroler, ponieważ obsługuje proces przejrzenia testu przed zakończeniem.
+
+2. *Information Expert (Expert):*
+   - addNewTest(myTest: Test) : void: Ekspert, ponieważ wie, jak dodać nowy test.
+   - addQuestionsToTest(myTest: Test) : void: Ekspert, ponieważ wie, jak zarządzać pytaniami w teście.
+   - editAndConfigureQuestions(myTest: Test) : void: Ekspert, ponieważ wie, jak edytować i konfigurować pytania w teście.
+   - reviewTest(myTest: Test) : void: Ekspert, ponieważ posiada informacje o procesie przeglądania testu.
+
+3. *Creator (Creator):*
+   - startTestCreationProcess() : void: Twórca, ponieważ inicjuje proces tworzenia testu.
