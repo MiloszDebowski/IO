@@ -1,0 +1,20 @@
+Klasa "Autoryzacja" według GRASP:
+
+1. Controller (Kontroler):**
+   - Odpowiedzialność: Zarządzanie przepływem danych między obiektami. W tym przypadku, autoryzacja może pełnić rolę kontrolera, zarządzając procesem autoryzacji.
+
+2. Information Expert (Ekspert w Informacji):**
+   - Odpowiedzialność: Przydzielanie odpowiedzialności do klasy, która posiada najwięcej informacji potrzebnych do wykonania zadania.
+   - Implementacja: Klasa "Autoryzacja" zawiera informację o uprawnieniach (`pozwolenie`), co czyni ją ekspertem w zarządzaniu autoryzacją.
+
+3. Creator (Twórca):**
+   - Odpowiedzialność: Przydzielanie odpowiedzialności dla utworzenia instancji innej klasy.
+   - Implementacja: Klasa "Autoryzacja" może być odpowiedzialna za utworzenie instancji autoryzacji.
+
+4. High Cohesion (Wysoka Kohezja):**
+   - Odpowiedzialność: Grupowanie funkcji, które są ze sobą powiązane.
+   - Implementacja: Metoda `sprawdzUprawnienia()` jest bezpośrednio związana z zarządzaniem autoryzacją, co zapewnia wysoką kohezję.
+
+5. Low Coupling (Niska Sprzężenie):**
+   - Odpowiedzialność: Minimalizacja zależności między klasami.
+   - Implementacja: Klasa "Autoryzacja" nie posiada zbyt wielu zależności od innych klas, co pomaga utrzymać niskie sprzężenie.
