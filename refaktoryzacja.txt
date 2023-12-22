@@ -1,0 +1,75 @@
+Zgrupowanie Zmiennych Globalnych:
+#refactor: Wydziel zmienne globalne do jednej klasy lub struktury, co ułatwi zarządzanie nimi i poprawi modularność kodu.
+cpp
+Copy code
+// #refactor: extract global state into a single class/wrapper
+struct GlobalState {
+    CGLApp glApp;
+    CTimer Timer;
+    CGLFont Font;
+    CCamera Camera;
+    CGLLight Light;
+    GLuint iTexFloor;
+    GLuint iTexFrame;
+    HANDLE hTimer;
+    bool bLight;
+    bool bTextured;
+    bool bReflection;
+    bool bFloor;
+    bool bInfo;
+    bool bRegenerate;
+
+    GlobalState() : bLight(true), bTextured(false), bReflection(true), bFloor(true), bInfo(true), bRegenerate(true) {}
+};
+
+GlobalState g_state; // Now, all global variables are grouped under a single structure.
+
+
+
+
+
+
+
+Unikanie Użycia Zmiennych Globalnych:
+Zamiast korzystać z zmiennych globalnych, przekazuj potrzebne obiekty jako argumenty funkcji lub konstruktorów, co wspiera zasady enkapsulacji i unikania globalnych zmiennych.
+cpp
+Copy code
+// Przykładowo, przekazanie stanu jako argument funkcji RenderScene:
+void RenderScene(AppState& appState, const GlobalState& globalState) {
+    // ... (bez używania zmiennych globalnych, używaj globalState)
+}
+
+// Przykładowo, przekazanie stanu jako argument funkcji ProcessKeyboard:
+bool ProcessKeyboard(const GlobalState& globalState) {
+    // ... (bez używania zmiennych globalnych, używaj globalState)
+}
+
+
+
+
+
+
+
+
+
+Podział na Funkcje:
+Podziel kod WinMain na mniejsze funkcje o konkretnych zadaniach, co ułatwi zrozumienie, testowanie i utrzymanie kodu, zgodnie z zasadą podziału odpowiedzialności.
+cpp
+Copy code
+// Przykładowo, podział WinMain na mniejsze funkcje:
+int WINAPI WinMain(HINSTANCE current_in, HINSTANCE prev_in, LPSTR cmdl, int n_show) {
+    try {
+        InitializeApplication();
+        RunMainLoop();
+        CleanUp();
+    } catch (const std::exception &e) {
+        HandleException(e);
+    }
+    return 0;
+}
+
+
+// Odpowiednie implementacje funkcji InitializeApplication, RunMainLoop, CleanUp, HandleException...
+
+
+Te zmiany mają na celu poprawę czytelności, utrzymanie jednoznaczności kodu i ułatwienie zarządzania stanem aplikacji.
