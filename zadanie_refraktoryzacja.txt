@@ -1,0 +1,1 @@
+Kod funkcji WinMain wymaga refaktoryzacji ze względu na zbyt dużą długość i brak modularizacji, co utrudnia jego zrozumienie. Brak użycia zmiennych lokalnych i nadmierna ilość operacji sprawiają, że kod staje się mniej czytelny. Wprowadzenie modułów oraz bardziej precyzyjne obsługi wyjątków mogłoby poprawić jego jakość.
