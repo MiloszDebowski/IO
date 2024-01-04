@@ -1,0 +1,3 @@
+Przydatnym wzorcem projektowym w naszym projekcie byłby według mnie wzorzec Budowniczy
+Wzorzec ten może być stosowany do tworzenia bardziej skomplikowanych testów z wieloma elementami, takimi jak różne pytania, odpowiedzi, typy pytań, etc. Każdy rodzaj testu (np. test wielokrotnego wyboru, test z otwartymi pytaniami) może mieć swój własny builder, który definiuje, jakie pytania będą w nim zawarte.
+Można jednak rozważyć zastosowanie kilku wzorców projektowych w celu poprawy struktury, elastyczności i czytelności kodu, tak więc nie ma jednego "najlepszego" wzorca projektowego.
