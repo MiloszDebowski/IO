@@ -1,0 +1,21 @@
+W moim fragmencie kodu najlepiej zastosawać wzorzec budowniczy. Dlaczego?
+
+Wzorzec Builder jest odpowiedni do zastosowania w tym przypadku, ponieważ umożliwia konstruowanie złożonych obiektów krok po kroku, pozwalając na różne konfiguracje obiektu końcowego. Oto kilka powodów, dla których wzorzec Builder jest korzystny w tym kontekście:
+
+Konfigurowalność: Wzorzec Builder pozwala na elastyczną konfigurację obiektu poprzez różne kroki budowy. W przypadku testu możemy mieć różne sposoby tworzenia, różne rodzaje pytań itp. Builder pozwala nam dostosować proces tworzenia testu w zależności od potrzeb.
+
+Kroki budowy oddzielone od samego obiektu: Builder oddziela kroki budowy obiektu od samego obiektu. W ten sposób kod kierujący budową obiektu (w tym przypadku, TestDirector) może być niezależny od konkretnych klas budujących (np. DefaultTestBuilder). To zapewnia elastyczność w modyfikowaniu procesu konstrukcji bez konieczności modyfikowania samego obiektu.
+
+Przejrzystość kodu klienta: Korzystając z wzorca Builder, kod klienta (w funkcji main w tym przypadku) jest prostszy i bardziej przejrzysty. Klient nie musi znać wszystkich szczegółów budowy obiektu; wystarczy mu skorzystanie z odpowiedniego builder'a.
+
+Łatwość testowania i debugowania: Dzięki oddzieleniu kroków budowy, możemy łatwo testować i debugować każdy krok oddzielnie. To ułatwia utrzymanie i rozwijanie kodu.
+
+Zmienność obiektu końcowego: Wzorzec Builder umożliwia konstrukcję różnych wariantów obiektu końcowego. Możemy łatwo zaimplementować różne buildery, aby uzyskać różne warianty testu, z różnymi rodzajami pytań, przedmiotami itp.
+
+W skrócie, wzorzec Builder jest najlepszym wyborem, ponieważ dostarcza elastyczność, czytelność, łatwość testowania i oddziela proces konstrukcji od samego obiektu, co jest kluczowe w przypadku złożonych struktur obiektów, takich jak test.
+
+
+
+
+
+
