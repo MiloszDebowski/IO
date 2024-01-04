@@ -1,0 +1,10 @@
+Grupowanie nagłówków: Można zgrupować nagłówki w sekcje, aby zwiększyć czytelność.
+Grupowanie zmiennych globalnych: Można rozważyć umieszczenie zmiennych globalnych w strukturze lub klasie, co ułatwi zarządzanie nimi.
+Użycie const w funkcji: Dodanie const do funkcji initFromMoveable tam, gdzie to możliwe, dla lepszej spójności i ochrony przed modyfikacjami.
+Użycie enum zamiast stałych liczbowych w celu zwiększenia czytelności kodu.
+Te zmiany poprawią czytelność, organizację i zrozumiałość kodu, co ułatwi jego utrzymanie i dalszy rozwój.
+
+
+
+
+
