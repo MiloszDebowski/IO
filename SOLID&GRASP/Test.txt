@@ -1,0 +1,10 @@
+1. Zasada pojedynczej odpowiedzialności (Single Responsibility Principle - SRP):
+Klasa Test powinna mieć jedną, jasno zdefiniowaną odpowiedzialność. W tym przypadku może to być zarządzanie danymi testu, w tym jego nazwą i oceną.
+2. Zasada otwarte/zamknięte (Open/Closed Principle - OCP):
+Klasa Test powinna być otwarta na rozszerzenia, ale zamknięta na modyfikacje. Można to osiągnąć poprzez umożliwienie rozszerzenia funkcjonalności klasy bez bezpośrednich zmian w jej kodzie.
+3. Zasada podstawienia Liskov (Liskov Substitution Principle - LSP):
+Obiekty klasy Test powinny być zastępowalne przez obiekty jej podklas bez wprowadzania błędów w programie. W praktyce oznacza to, że metody klasy bazowej powinny działać zgodnie z oczekiwaniami dla wszystkich jej klas pochodnych.
+4. Zasada segregacji interfejsów (Interface Segregation Principle - ISP):
+Klienci nie powinni być zmuszani do implementacji interfejsów, których nie używają. W przypadku klasy Test można stworzyć interfejsy, które definiują konkretne zestawy operacji, a klasy implementują tylko te, które są dla nich istotne.
+5. Zasada odwrócenia zależności (Dependency Inversion Principle - DIP):
+Moduły wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. Oba powinny zależeć od abstrakcji. W przypadku klasy Test może to oznaczać zależność od abstrakcji w miejsce konkretnej implementacji.
